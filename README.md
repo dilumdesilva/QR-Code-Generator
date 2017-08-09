@@ -3,3 +3,8 @@ This application has the ability to generate a QR code or a BAR code according t
 
 Application architecture:
 This application has two layers called UI and SharedLibrary, Bassically UI Layer contains all UI forms of the application while SharedLibrary contains all the common methods and class.
+
+You can download the setup (.exe) of the application by following this directory path
+QR-Code-Generator --> QRGenaratorSetup --> QRGenaratorSetup --> Debug --> Download QRGenaratorSetup.msi and Setup.exe
+
+Use can use QRGenarator after you install it using the .exe
