@@ -26,5 +26,18 @@ namespace QR_Generator_V1._0
         {
 
         }
+
+        private void btnBarGenerate_Click(object sender, EventArgs e)
+        {
+            Zen.Barcode.Code128BarcodeDraw barcode = Zen.Barcode.BarcodeDrawFactory.Code128WithChecksum;
+            picBox.Image = barcode.Draw(txtBarCode.Text, 50);
+
+        }
+
+        private void btnQrGenerate_Click(object sender, EventArgs e)
+        {
+            Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            picBox.Image = qrcode.Draw(txtQrCode.Text, 50); 
+        }
     }
 }
