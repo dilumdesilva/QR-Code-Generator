@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QRGenaratorSetup", "QRGenaratorSetup\QRGenaratorSetup.vdproj", "{060075C1-E802-44AC-95F4-2DE4B7AC337E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{060075C1-E802-44AC-95F4-2DE4B7AC337E}.Debug|Default.ActiveCfg = Debug
+		{060075C1-E802-44AC-95F4-2DE4B7AC337E}.Debug|Default.Build.0 = Debug
+		{060075C1-E802-44AC-95F4-2DE4B7AC337E}.Release|Default.ActiveCfg = Release
+		{060075C1-E802-44AC-95F4-2DE4B7AC337E}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
