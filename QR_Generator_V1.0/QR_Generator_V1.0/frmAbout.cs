@@ -14,6 +14,7 @@ namespace QR_Generator_V1._0
     {
         public frmAbout()
         {
+            //Developed by Dilum De Silva
             InitializeComponent();
         }
     }

@@ -36,7 +36,7 @@ namespace QR_Generator_V1._0
             {
                 Generating_Methods obj = new Generating_Methods();
                 string textBarCode = txtBarCode.Text;
-                picBox.Image = obj.generateBarCode(textBarCode);
+                picBoxBAR.Image = obj.generateBarCode(textBarCode);
                 //code by Dilum De Silva
             }
             catch (Exception ex)
@@ -53,7 +53,7 @@ namespace QR_Generator_V1._0
             {
                 Generating_Methods obj = new Generating_Methods();
                 string textQrCode = txtQrCode.Text;
-                picBox.Image = obj.generatQrCode(textQrCode);
+                picBoxQR.Image = obj.generatQrCode(textQrCode);
                 //code by Dilum De Silva
             }
             catch (Exception ex)

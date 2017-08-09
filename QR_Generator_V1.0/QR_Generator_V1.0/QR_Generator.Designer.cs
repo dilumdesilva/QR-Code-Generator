@@ -34,15 +34,15 @@
             this.btnQrGenerate = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBarGenerate = new System.Windows.Forms.Button();
-            this.picBox = new System.Windows.Forms.PictureBox();
+            this.picBoxQR = new System.Windows.Forms.PictureBox();
             this.lblMESSAGE = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picBoxBAR = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxQR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBAR)).BeginInit();
             this.SuspendLayout();
             // 
             // txtQrCode
@@ -75,7 +75,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(223, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(229, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(274, 47);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -92,15 +92,15 @@
             this.btnBarGenerate.UseVisualStyleBackColor = true;
             this.btnBarGenerate.Click += new System.EventHandler(this.btnBarGenerate_Click);
             // 
-            // picBox
+            // picBoxQR
             // 
-            this.picBox.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picBox.Location = new System.Drawing.Point(65, 97);
-            this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(281, 191);
-            this.picBox.TabIndex = 7;
-            this.picBox.TabStop = false;
+            this.picBoxQR.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.picBoxQR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picBoxQR.Location = new System.Drawing.Point(65, 97);
+            this.picBoxQR.Name = "picBoxQR";
+            this.picBoxQR.Size = new System.Drawing.Size(281, 191);
+            this.picBoxQR.TabIndex = 7;
+            this.picBoxQR.TabStop = false;
             // 
             // lblMESSAGE
             // 
@@ -135,15 +135,15 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // pictureBox2
+            // picBoxBAR
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(395, 97);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(281, 191);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
+            this.picBoxBAR.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.picBoxBAR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picBoxBAR.Location = new System.Drawing.Point(395, 97);
+            this.picBoxBAR.Name = "picBoxBAR";
+            this.picBoxBAR.Size = new System.Drawing.Size(281, 191);
+            this.picBoxBAR.TabIndex = 13;
+            this.picBoxBAR.TabStop = false;
             // 
             // label1
             // 
@@ -165,11 +165,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(721, 526);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.picBoxBAR);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblMESSAGE);
-            this.Controls.Add(this.picBox);
+            this.Controls.Add(this.picBoxQR);
             this.Controls.Add(this.btnBarGenerate);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnQrGenerate);
@@ -180,8 +180,8 @@
             this.Text = "QR Generator V1.0";
             this.Load += new System.EventHandler(this.QR_Generator_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxQR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBAR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,11 +194,11 @@
         private System.Windows.Forms.Button btnQrGenerate;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnBarGenerate;
-        private System.Windows.Forms.PictureBox picBox;
+        private System.Windows.Forms.PictureBox picBoxQR;
         private System.Windows.Forms.Label lblMESSAGE;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picBoxBAR;
         private System.Windows.Forms.Label label1;
     }
 }
