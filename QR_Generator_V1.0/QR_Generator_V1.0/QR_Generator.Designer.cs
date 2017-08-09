@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
+        //code by Dilum De Silva
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -120,6 +120,7 @@
             this.btnAbout.TabIndex = 12;
             this.btnAbout.Text = "About";
             this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // btnReset
             // 
@@ -129,6 +130,7 @@
             this.btnReset.TabIndex = 11;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // QR_Generator
             // 

@@ -14,6 +14,7 @@ namespace QR_Generator_V1._0
         [STAThread]
         static void Main()
         {
+            //code by Dilum De Silva
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new QR_Generator());
