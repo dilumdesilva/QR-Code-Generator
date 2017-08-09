@@ -42,7 +42,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 339);
+            this.textBox1.Location = new System.Drawing.Point(117, 372);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(284, 29);
@@ -50,7 +50,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 389);
+            this.textBox2.Location = new System.Drawing.Point(117, 422);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(284, 29);
@@ -58,7 +58,7 @@
             // 
             // btnQrGenerate
             // 
-            this.btnQrGenerate.Location = new System.Drawing.Point(472, 341);
+            this.btnQrGenerate.Location = new System.Drawing.Point(470, 374);
             this.btnQrGenerate.Name = "btnQrGenerate";
             this.btnQrGenerate.Size = new System.Drawing.Size(128, 27);
             this.btnQrGenerate.TabIndex = 4;
@@ -78,7 +78,7 @@
             // 
             // btnBarGenerate
             // 
-            this.btnBarGenerate.Location = new System.Drawing.Point(472, 389);
+            this.btnBarGenerate.Location = new System.Drawing.Point(470, 422);
             this.btnBarGenerate.Name = "btnBarGenerate";
             this.btnBarGenerate.Size = new System.Drawing.Size(128, 27);
             this.btnBarGenerate.TabIndex = 6;
@@ -87,9 +87,10 @@
             // 
             // pictureBox
             // 
+            this.pictureBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pictureBox.Location = new System.Drawing.Point(68, 107);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(587, 169);
+            this.pictureBox.Size = new System.Drawing.Size(587, 197);
             this.pictureBox.TabIndex = 7;
             this.pictureBox.TabStop = false;
             // 
@@ -99,7 +100,7 @@
             this.lblMESSAGE.BackColor = System.Drawing.Color.Transparent;
             this.lblMESSAGE.Font = new System.Drawing.Font("Aachen BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMESSAGE.ForeColor = System.Drawing.Color.Red;
-            this.lblMESSAGE.Location = new System.Drawing.Point(116, 311);
+            this.lblMESSAGE.Location = new System.Drawing.Point(114, 344);
             this.lblMESSAGE.Name = "lblMESSAGE";
             this.lblMESSAGE.Size = new System.Drawing.Size(172, 16);
             this.lblMESSAGE.TabIndex = 8;
@@ -112,7 +113,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(721, 458);
+            this.ClientSize = new System.Drawing.Size(721, 490);
             this.Controls.Add(this.lblMESSAGE);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.btnBarGenerate);
