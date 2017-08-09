@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QR_Generator_V1.0", "QR_Generator_V1.0\QR_Generator_V1.0.csproj", "{82D4BB36-8E61-4099-9CD5-34D50DEEBCF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "QR_Generator_V1.0\BAL.csproj", "{82D4BB36-8E61-4099-9CD5-34D50DEEBCF7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "ClassLibrary1\SharedLibrary.csproj", "{E8677336-AD26-40C6-B484-53F47CA03A9C}"
 EndProject
