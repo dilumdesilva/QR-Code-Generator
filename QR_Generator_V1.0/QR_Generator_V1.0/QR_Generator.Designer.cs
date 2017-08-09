@@ -38,29 +38,32 @@
             this.lblMESSAGE = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtQrCode
             // 
-            this.txtQrCode.Location = new System.Drawing.Point(114, 354);
+            this.txtQrCode.Location = new System.Drawing.Point(65, 354);
             this.txtQrCode.Multiline = true;
             this.txtQrCode.Name = "txtQrCode";
-            this.txtQrCode.Size = new System.Drawing.Size(284, 29);
+            this.txtQrCode.Size = new System.Drawing.Size(281, 29);
             this.txtQrCode.TabIndex = 1;
             // 
             // txtBarCode
             // 
-            this.txtBarCode.Location = new System.Drawing.Point(114, 404);
+            this.txtBarCode.Location = new System.Drawing.Point(395, 354);
             this.txtBarCode.Multiline = true;
             this.txtBarCode.Name = "txtBarCode";
-            this.txtBarCode.Size = new System.Drawing.Size(284, 29);
+            this.txtBarCode.Size = new System.Drawing.Size(281, 29);
             this.txtBarCode.TabIndex = 2;
             // 
             // btnQrGenerate
             // 
-            this.btnQrGenerate.Location = new System.Drawing.Point(467, 356);
+            this.btnQrGenerate.Location = new System.Drawing.Point(136, 404);
             this.btnQrGenerate.Name = "btnQrGenerate";
             this.btnQrGenerate.Size = new System.Drawing.Size(128, 27);
             this.btnQrGenerate.TabIndex = 4;
@@ -81,7 +84,7 @@
             // 
             // btnBarGenerate
             // 
-            this.btnBarGenerate.Location = new System.Drawing.Point(467, 404);
+            this.btnBarGenerate.Location = new System.Drawing.Point(478, 404);
             this.btnBarGenerate.Name = "btnBarGenerate";
             this.btnBarGenerate.Size = new System.Drawing.Size(128, 27);
             this.btnBarGenerate.TabIndex = 6;
@@ -95,7 +98,7 @@
             this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picBox.Location = new System.Drawing.Point(65, 97);
             this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(590, 191);
+            this.picBox.Size = new System.Drawing.Size(281, 191);
             this.picBox.TabIndex = 7;
             this.picBox.TabStop = false;
             // 
@@ -114,9 +117,9 @@
             // 
             // btnAbout
             // 
-            this.btnAbout.Location = new System.Drawing.Point(373, 471);
+            this.btnAbout.Location = new System.Drawing.Point(324, 490);
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(77, 24);
+            this.btnAbout.Size = new System.Drawing.Size(91, 24);
             this.btnAbout.TabIndex = 12;
             this.btnAbout.Text = "About";
             this.btnAbout.UseVisualStyleBackColor = true;
@@ -124,13 +127,35 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(273, 471);
+            this.btnReset.Location = new System.Drawing.Point(324, 450);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(73, 24);
+            this.btnReset.Size = new System.Drawing.Size(91, 24);
             this.btnReset.TabIndex = 11;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Location = new System.Drawing.Point(395, 97);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(281, 191);
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Aachen BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(459, 326);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(172, 16);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Please enter your URL here";
             // 
             // QR_Generator
             // 
@@ -138,7 +163,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(721, 523);
+            this.ClientSize = new System.Drawing.Size(721, 526);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblMESSAGE);
@@ -154,6 +181,7 @@
             this.Load += new System.EventHandler(this.QR_Generator_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,6 +198,8 @@
         private System.Windows.Forms.Label lblMESSAGE;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
