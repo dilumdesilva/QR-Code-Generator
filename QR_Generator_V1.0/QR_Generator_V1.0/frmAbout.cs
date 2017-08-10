@@ -43,7 +43,7 @@ namespace QR_Generator_V1._0
                     Process.Start("https://drive.google.com/open?id=0B31SNK7utOq0WVg5RUktQl9iUVk");
                     Process.Start("https://github.com/dilum1995");
 
-                    MessageBox.Show("Please extract the zip file and install the latest version" + Environment.NewLine + Environment.NewLine + "Thank you!" + Environment.NewLine, "Update manager", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Please download setup files of the latest version " + Environment.NewLine + Environment.NewLine + "Thank you!" + Environment.NewLine, "Update manager", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 return;
