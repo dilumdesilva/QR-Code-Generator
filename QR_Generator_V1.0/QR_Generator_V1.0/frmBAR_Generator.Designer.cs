@@ -110,6 +110,7 @@
             this.btnDownload.TabIndex = 21;
             this.btnDownload.Text = "Download BAR";
             this.btnDownload.UseVisualStyleBackColor = true;
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
             // 
             // frmBAR_Generator
             // 
