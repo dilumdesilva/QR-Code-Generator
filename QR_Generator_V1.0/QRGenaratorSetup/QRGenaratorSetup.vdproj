@@ -291,7 +291,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:QRGenaratorSetup"
         "ProductCode" = "8:{71B5529E-0F99-4CDD-ABF0-46C71B66FA1A}"
-        "PackageCode" = "8:{0D93BD96-9109-488B-BACD-3D2EB84AFDC5}"
+        "PackageCode" = "8:{C5DD9C2B-68F1-41A4-AE3D-43F5542360E1}"
         "UpgradeCode" = "8:{AC564C0A-89E5-425E-807D-A315BE16B067}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -413,7 +413,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7758205ABC3F4BC6A23F62C2ACD2DBB5"
             {
-            "Name" = "8:QRGenarator (Active)"
+            "Name" = "8:QRGenarator V1.3"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -427,7 +427,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_AC1DB857B4C94381958D5B28C877B259"
             {
-            "Name" = "8:QRGenarator (Active)"
+            "Name" = "8:QRGenarator V1.3"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"

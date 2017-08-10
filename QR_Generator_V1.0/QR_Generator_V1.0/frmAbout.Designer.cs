@@ -58,7 +58,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "QR Generator V1.2";
+            this.label2.Text = "QR Generator V1.3";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
