@@ -17,5 +17,15 @@ namespace QR_Generator_V1._0
             //Developed by Dilum De Silva
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
