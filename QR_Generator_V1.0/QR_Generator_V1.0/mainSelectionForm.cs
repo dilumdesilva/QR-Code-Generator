@@ -31,5 +31,19 @@ namespace QR_Generator_V1._0
                 throw ex;
             }
         }
+
+        private void btnBarPath_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmBAR_Generator obj = new frmBAR_Generator();
+                obj.Show();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

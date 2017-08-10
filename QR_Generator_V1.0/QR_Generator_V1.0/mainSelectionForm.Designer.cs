@@ -50,6 +50,7 @@
             // btnQrPath
             // 
             this.btnQrPath.BackColor = System.Drawing.SystemColors.Control;
+            this.btnQrPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQrPath.Location = new System.Drawing.Point(306, 251);
             this.btnQrPath.Name = "btnQrPath";
             this.btnQrPath.Size = new System.Drawing.Size(150, 35);
@@ -66,6 +67,7 @@
             this.btnBarPath.TabIndex = 2;
             this.btnBarPath.Text = "Generate BAR code";
             this.btnBarPath.UseVisualStyleBackColor = false;
+            this.btnBarPath.Click += new System.EventHandler(this.btnBarPath_Click);
             // 
             // btnAbout
             // 
@@ -89,6 +91,7 @@
             this.Controls.Add(this.btnQrPath);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "mainSelectionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QR Generator V1.2";
