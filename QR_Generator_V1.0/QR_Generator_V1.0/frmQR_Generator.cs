@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using sharedLibrary;
-
+using System.Drawing.Imaging;
+using ClassLibrary1;
 
 namespace QR_Generator_V1._0
 {
     public partial class frmQR_Generator : Form
     {
+        private string UserSelectedQRPath;
+        private string FileName;
+
         public frmQR_Generator()
         {
             InitializeComponent();
@@ -53,6 +57,7 @@ namespace QR_Generator_V1._0
             {
                 Generating_Methods obj = new Generating_Methods();
                 string textQrCode = txtQrCode.Text;
+                
                 picBoxQR.Image = obj.generatQrCode(textQrCode);
                 //code by Dilum De Silva
             }
@@ -92,6 +97,7 @@ namespace QR_Generator_V1._0
             }
         }
 
+        //this is the method for reset text boxes and other form feilds. code by Dilum
         private void ResetFeilds()
         {
             try
@@ -123,6 +129,61 @@ namespace QR_Generator_V1._0
             }
     }
 
+        private void btnDownload_Click(object sender, EventArgs e)
+        {
+            try
+            { 
+                SaveQrCode();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
+        //This method will get name and path of the file
+        private void SaveQrCode()
+        { 
+            frmGetFileName objGetFileNameForm = new frmGetFileName();
+            objGetFileNameForm.Show();
+
+            FileDetails objFileDetails = new FileDetails();
+            FileName = objFileDetails.FileName.ToString();
+
+            FolderBrowserDialog FBD = new FolderBrowserDialog();
+            if (FBD.ShowDialog() == DialogResult.OK)
+            {
+                objFileDetails.FilePath = FBD.SelectedPath;
+                UserSelectedQRPath = FBD.SelectedPath;
+            }
+
+            if (FileName != string.Empty && UserSelectedQRPath != string.Empty)
+            {
+
+                if (picBoxQR.Image != null)
+                {
+                    //this set the width and the height of the generated qr image  
+                    using (var bmp = new Bitmap(picBoxQR.Image.Width, picBoxQR.Image.Height))
+                    {
+                        string path = UserSelectedQRPath;
+
+                        picBoxQR.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
+
+                        path = System.IO.Path.Combine(path, FileName + ".png");
+                        bmp.Save(path);
+                        bmp.Dispose();
+
+                        MessageBox.Show("Your QR code has been saved");
+                    }
+                }
+
+            }
+
+            
+            
+        }
     }
 }
 

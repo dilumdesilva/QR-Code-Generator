@@ -35,6 +35,7 @@
             this.picBoxQR = new System.Windows.Forms.PictureBox();
             this.lblMESSAGE = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
+            this.btnDownload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQR)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +50,7 @@
             // 
             // btnQrGenerate
             // 
-            this.btnQrGenerate.Location = new System.Drawing.Point(377, 272);
+            this.btnQrGenerate.Location = new System.Drawing.Point(377, 277);
             this.btnQrGenerate.Name = "btnQrGenerate";
             this.btnQrGenerate.Size = new System.Drawing.Size(128, 27);
             this.btnQrGenerate.TabIndex = 4;
@@ -93,7 +94,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(377, 316);
+            this.btnReset.Location = new System.Drawing.Point(377, 314);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(128, 27);
             this.btnReset.TabIndex = 11;
@@ -101,13 +102,24 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // btnDownload
+            // 
+            this.btnDownload.Location = new System.Drawing.Point(56, 372);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(100, 27);
+            this.btnDownload.TabIndex = 12;
+            this.btnDownload.Text = "Download QR";
+            this.btnDownload.UseVisualStyleBackColor = true;
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
+            // 
             // frmQR_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(721, 429);
+            this.ClientSize = new System.Drawing.Size(721, 445);
+            this.Controls.Add(this.btnDownload);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblMESSAGE);
             this.Controls.Add(this.picBoxQR);
@@ -134,6 +146,7 @@
         private System.Windows.Forms.PictureBox picBoxQR;
         private System.Windows.Forms.Label lblMESSAGE;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnDownload;
     }
 }
 

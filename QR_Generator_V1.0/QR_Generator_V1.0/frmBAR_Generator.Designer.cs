@@ -35,6 +35,7 @@
             this.btnBarGenerate = new System.Windows.Forms.Button();
             this.txtBarCode = new System.Windows.Forms.TextBox();
             this.btnReset = new System.Windows.Forms.Button();
+            this.btnDownload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxlogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBAR)).BeginInit();
             this.SuspendLayout();
@@ -101,12 +102,22 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // btnDownload
+            // 
+            this.btnDownload.Location = new System.Drawing.Point(45, 376);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(100, 27);
+            this.btnDownload.TabIndex = 21;
+            this.btnDownload.Text = "Download BAR";
+            this.btnDownload.UseVisualStyleBackColor = true;
+            // 
             // frmBAR_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(689, 424);
+            this.ClientSize = new System.Drawing.Size(689, 443);
+            this.Controls.Add(this.btnDownload);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picBoxBAR);
@@ -134,5 +145,6 @@
         private System.Windows.Forms.Button btnBarGenerate;
         private System.Windows.Forms.TextBox txtBarCode;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnDownload;
     }
 }
