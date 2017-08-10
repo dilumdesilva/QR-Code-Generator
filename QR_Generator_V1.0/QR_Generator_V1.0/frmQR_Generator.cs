@@ -134,6 +134,8 @@ namespace QR_Generator_V1._0
             try
             { 
                 SaveQrCode();
+                ResetFeilds();
+                picBoxQR.Image = null;
             }
             catch (Exception ex)
             {
@@ -147,16 +149,30 @@ namespace QR_Generator_V1._0
         private void SaveQrCode()
         { 
             frmGetFileName objGetFileNameForm = new frmGetFileName();
-            objGetFileNameForm.Show();
+            objGetFileNameForm.ShowDialog();
+
+           
 
             FileDetails objFileDetails = new FileDetails();
-            FileName = objFileDetails.FileName.ToString();
+            if (objGetFileNameForm.obj.FileName != string.Empty)
+            {
+                FileName = objGetFileNameForm.obj.FileName;
+            }
+            else
+            {
+                MessageBox.Show("Please enter a file name before save");
+            }
 
             FolderBrowserDialog FBD = new FolderBrowserDialog();
             if (FBD.ShowDialog() == DialogResult.OK)
             {
                 objFileDetails.FilePath = FBD.SelectedPath;
                 UserSelectedQRPath = FBD.SelectedPath;
+            }
+
+            else
+            {
+                MessageBox.Show("Please set a file directory to save");
             }
 
             if (FileName != string.Empty && UserSelectedQRPath != string.Empty)
@@ -180,6 +196,7 @@ namespace QR_Generator_V1._0
                 }
 
             }
+            
 
             
             
