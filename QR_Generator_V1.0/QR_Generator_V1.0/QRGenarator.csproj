@@ -50,17 +50,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="about.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="about.Designer.cs">
-      <DependentUpon>about.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAbout.Designer.cs">
       <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBAR_Generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBAR_Generator.Designer.cs">
+      <DependentUpon>frmBAR_Generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainSelectionForm.Designer.cs">
+      <DependentUpon>mainSelectionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="QR_Generator.cs">
       <SubType>Form</SubType>
@@ -72,6 +78,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBAR_Generator.resx">
+      <DependentUpon>frmBAR_Generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainSelectionForm.resx">
+      <DependentUpon>mainSelectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QR_Generator.resx">
       <DependentUpon>QR_Generator.cs</DependentUpon>

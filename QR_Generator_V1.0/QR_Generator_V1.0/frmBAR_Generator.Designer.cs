@@ -1,6 +1,6 @@
 ﻿namespace QR_Generator_V1._0
 {
-    partial class about
+    partial class frmBAR_Generator
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmBAR_Generator
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "about";
+            this.ClientSize = new System.Drawing.Size(689, 462);
+            this.Name = "frmBAR_Generator";
+            this.Text = "frmBAR_Generator";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

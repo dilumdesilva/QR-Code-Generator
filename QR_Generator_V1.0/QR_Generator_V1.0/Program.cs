@@ -17,7 +17,7 @@ namespace QR_Generator_V1._0
             //code by Dilum De Silva
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QR_Generator());
+            Application.Run(new mainSelectionForm());
         }
     }
 }
