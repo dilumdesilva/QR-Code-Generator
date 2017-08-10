@@ -36,7 +36,7 @@ namespace QR_Generator_V1._0
             if (dResult == DialogResult.OK)
             {
                 //if user clicks ok for update this will redirect and download the lateset version in my git branch
-                dResult = MessageBox.Show("Fetching updates.." + Environment.NewLine + "Updates has found !" + Environment.NewLine + Environment.NewLine + "Do you want update?", "Update manager", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                dResult = MessageBox.Show("Fetching updates.." + Environment.NewLine + "Updates has found !" + Environment.NewLine + Environment.NewLine + "Do you want to download the latest update?", "Update manager", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dResult == DialogResult.Yes)
                 {
                     //this will open the defult browser with following links
