@@ -68,11 +68,11 @@
     <Compile Include="mainSelectionForm.Designer.cs">
       <DependentUpon>mainSelectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="QR_Generator.cs">
+    <Compile Include="frmQR_Generator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QR_Generator.Designer.cs">
-      <DependentUpon>QR_Generator.cs</DependentUpon>
+    <Compile Include="frmQR_Generator.Designer.cs">
+      <DependentUpon>frmQR_Generator.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,8 +85,8 @@
     <EmbeddedResource Include="mainSelectionForm.resx">
       <DependentUpon>mainSelectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QR_Generator.resx">
-      <DependentUpon>QR_Generator.cs</DependentUpon>
+    <EmbeddedResource Include="frmQR_Generator.resx">
+      <DependentUpon>frmQR_Generator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

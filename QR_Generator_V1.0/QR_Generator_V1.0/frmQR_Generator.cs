@@ -12,9 +12,9 @@ using sharedLibrary;
 
 namespace QR_Generator_V1._0
 {
-    public partial class QR_Generator : Form
+    public partial class frmQR_Generator : Form
     {
-        public QR_Generator()
+        public frmQR_Generator()
         {
             InitializeComponent();
         }
@@ -32,18 +32,18 @@ namespace QR_Generator_V1._0
         private void btnBarGenerate_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                Generating_Methods obj = new Generating_Methods();
-                string textBarCode = txtBarCode.Text;
-                picBoxBAR.Image = obj.generateBarCode(textBarCode);
-                //code by Dilum De Silva
-            }
-            catch (Exception ex)
-            {
+            //try
+            //{
+            //    Generating_Methods obj = new Generating_Methods();
+            //    string textBarCode = txtBarCode.Text;
+            //    picBoxBAR.Image = obj.generateBarCode(textBarCode);
+            //    //code by Dilum De Silva
+            //}
+            //catch (Exception ex)
+            //{
 
-                MessageBox.Show(ex.Message);
-            }
+            //    MessageBox.Show(ex.Message);
+            //}
             
         }
 
@@ -66,16 +66,16 @@ namespace QR_Generator_V1._0
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
-            try
-            {
-                frmAbout obj = new frmAbout();
-                obj.Show();
-            }
-            catch (Exception ex)
-            {
+            //try
+            //{
+            //    frmAbout obj = new frmAbout();
+            //    obj.Show();
+            //}
+            //catch (Exception ex)
+            //{
 
-                throw ex;
-            }
+            //    throw ex;
+            //}
         }
 
         private void btnReset_Click(object sender, EventArgs e)

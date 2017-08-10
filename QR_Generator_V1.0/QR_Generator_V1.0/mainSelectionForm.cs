@@ -32,11 +32,27 @@ namespace QR_Generator_V1._0
             }
         }
 
+        //bar generating form will load with the btn click
         private void btnBarPath_Click(object sender, EventArgs e)
         {
             try
             {
                 frmBAR_Generator obj = new frmBAR_Generator();
+                obj.Show();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        //qr generating form will load with the btn click
+        private void btnQrPath_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmQR_Generator obj = new frmQR_Generator();
                 obj.Show();
             }
             catch (Exception ex)

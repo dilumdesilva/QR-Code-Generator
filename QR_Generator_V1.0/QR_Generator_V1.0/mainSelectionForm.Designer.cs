@@ -57,6 +57,7 @@
             this.btnQrPath.TabIndex = 1;
             this.btnQrPath.Text = "Generate QR code";
             this.btnQrPath.UseVisualStyleBackColor = false;
+            this.btnQrPath.Click += new System.EventHandler(this.btnQrPath_Click);
             // 
             // btnBarPath
             // 

@@ -43,7 +43,7 @@
             // 
             this.picBoxlogo.BackColor = System.Drawing.Color.Transparent;
             this.picBoxlogo.Image = ((System.Drawing.Image)(resources.GetObject("picBoxlogo.Image")));
-            this.picBoxlogo.Location = new System.Drawing.Point(172, 38);
+            this.picBoxlogo.Location = new System.Drawing.Point(178, 37);
             this.picBoxlogo.Name = "picBoxlogo";
             this.picBoxlogo.Size = new System.Drawing.Size(328, 52);
             this.picBoxlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -56,7 +56,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Aachen BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(360, 129);
+            this.label1.Location = new System.Drawing.Point(361, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 16);
             this.label1.TabIndex = 18;
@@ -67,7 +67,7 @@
             // 
             this.picBoxBAR.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.picBoxBAR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picBoxBAR.Location = new System.Drawing.Point(44, 130);
+            this.picBoxBAR.Location = new System.Drawing.Point(45, 153);
             this.picBoxBAR.Name = "picBoxBAR";
             this.picBoxBAR.Size = new System.Drawing.Size(281, 191);
             this.picBoxBAR.TabIndex = 17;
@@ -75,7 +75,7 @@
             // 
             // btnBarGenerate
             // 
-            this.btnBarGenerate.Location = new System.Drawing.Point(362, 252);
+            this.btnBarGenerate.Location = new System.Drawing.Point(363, 275);
             this.btnBarGenerate.Name = "btnBarGenerate";
             this.btnBarGenerate.Size = new System.Drawing.Size(128, 27);
             this.btnBarGenerate.TabIndex = 16;
@@ -85,7 +85,7 @@
             // 
             // txtBarCode
             // 
-            this.txtBarCode.Location = new System.Drawing.Point(362, 158);
+            this.txtBarCode.Location = new System.Drawing.Point(363, 181);
             this.txtBarCode.Multiline = true;
             this.txtBarCode.Name = "txtBarCode";
             this.txtBarCode.Size = new System.Drawing.Size(281, 55);
@@ -93,7 +93,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(362, 294);
+            this.btnReset.Location = new System.Drawing.Point(363, 317);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(128, 27);
             this.btnReset.TabIndex = 20;
@@ -106,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(689, 384);
+            this.ClientSize = new System.Drawing.Size(689, 424);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picBoxBAR);
